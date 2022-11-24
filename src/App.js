@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'orange',
     flexDirection: 'row',
     padding: 6,
+    margin: 5,
+    borderRadius: 5,
   },
   bannerText: {
     fontSize: 25,

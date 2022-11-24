@@ -1,9 +1,10 @@
 import {View, Text} from 'react-native';
 import React from 'react';
+import styles from './TaskLabel.Style';
 
-const TaskLabel = () => {
+const TaskLabel = ({task}) => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>TaskLabel</Text>
     </View>
   );

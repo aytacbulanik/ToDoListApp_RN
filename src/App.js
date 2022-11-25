@@ -6,7 +6,7 @@ import SaveTask from './components/SaveTask/SaveTask';
 const App = () => {
   const [number, setNumber] = useState(0);
   const [tasks, setTasks] = useState([]);
-
+  const kelime = '';
   const renderTask = item => {
     <TaskLabel task={item} />;
   };
@@ -17,7 +17,7 @@ const App = () => {
         <Text style={styles.bannerNumber}>{number}</Text>
       </View>
       <FlatList data={tasks} renderItem={renderTask} />
-      <SaveTask />
+      <SaveTask value={kelime} />
     </SafeAreaView>
   );
 };

@@ -11,10 +11,12 @@ import React from 'react';
 const App = () => {
   return (
     <SafeAreaView>
-      <View style={styles.addContainer}>
-        <TextInput style={styles.addContainer} />
-        <TouchableOpacity>
-          <Text> Add </Text>
+      <View style={styles.container}>
+        <View style={styles.addContainer}>
+          <TextInput />
+        </View>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}> ADD </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -23,15 +25,31 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flexDirection: 'row',
+  },
+  addContainer: {
+    flex: 1,
+    margin: 5,
+    padding: 5,
+    borderRadius: 6,
+    borderWidth: 1,
+  },
+  textInputContainer: {
+    margin: 8,
+    padding: 5,
+    height: 40,
+    borderRadius: 6,
     flex: 1,
   },
-  addContainer: {flexDirection: 'row', backgroundColor: 'red'},
-  textInputContainer: {
-    margin: 10,
-    padding: 5,
-    height: 30,
-    borderRadius: 6,
+  button: {
+    backgroundColor: 'aqua',
+    justifyContent: 'center',
+    margin: 5,
+    borderRadius: 5,
   },
-  button: {},
+  buttonText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
 });
 export default App;

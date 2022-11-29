@@ -17,7 +17,7 @@ const App = () => {
     console.log(textArray);
     setText('');
   }
-  const textRenderItem = ({item}) => <Text>{item}</Text>;
+  const textRenderItem = ({item}) => <Text style={styles.Label}>{item}</Text>;
   return (
     <SafeAreaView>
       <Text style={styles.banner}> TO-DO LIST APP</Text>
@@ -70,6 +70,12 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  Label: {
+    backgroundColor: 'lightgray',
+    fontSize: 20,
+    margin: 6,
+    padding: 6,
   },
 });
 export default App;
